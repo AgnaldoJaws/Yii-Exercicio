@@ -1,0 +1,1418 @@
+2016/02/27 11:54:09 [error] [php] Undefined variable: user (/home/agnaldo/yii-demo/demos/teste2/protected/views/user/index.php:11)
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CController.php(869): UserController->renderFile()
+#1 /home/agnaldo/yii-demo/framework/web/CController.php(782): UserController->renderPartial()
+#2 /home/agnaldo/yii-demo/demos/teste2/protected/controllers/UserController.php(9): UserController->render()
+#3 /home/agnaldo/yii-demo/framework/web/actions/CInlineAction.php(49): UserController->actionIndex()
+#4 /home/agnaldo/yii-demo/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(286): UserController->runAction()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): UserController->runActionWithFilters()
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): UserController->run()
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=User/index
+in /home/agnaldo/yii-demo/demos/teste2/protected/views/user/index.php (11)
+in /home/agnaldo/yii-demo/demos/teste2/protected/controllers/UserController.php (9)
+in /home/agnaldo/yii-demo/demos/teste2/index.php (13)
+2016/02/27 16:38:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users/index".' in /home/agnaldo/yii-demo/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('users/index')
+#1 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=users/index
+---
+2016/02/27 16:40:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in /home/agnaldo/yii-demo/framework/web/CController.php:483
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CController.php(270): CController->missingAction('create')
+#1 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('create')
+#2 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('User/create')
+#3 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=User/create
+---
+2016/02/27 16:40:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in /home/agnaldo/yii-demo/framework/web/CController.php:483
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CController.php(270): CController->missingAction('create')
+#1 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('create')
+#2 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('User/create')
+#3 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=User/create
+---
+2016/02/27 16:43:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in /home/agnaldo/yii-demo/framework/web/CController.php:483
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CController.php(270): CController->missingAction('create')
+#1 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('create')
+#2 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create')
+#3 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user/create
+---
+2016/02/27 16:46:08 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/admin
+HTTP_REFERER=http://localhost:8090/index.php?r=user/create
+---
+2016/02/27 17:02:53 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/admin
+HTTP_REFERER=http://localhost:8090/index.php?r=user/index
+---
+2016/02/27 17:03:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/admin
+HTTP_REFERER=http://localhost:8090/index.php?r=site/login
+---
+2016/02/27 17:04:22 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/admin
+HTTP_REFERER=http://localhost:8090/index.php?r=user/index
+---
+2016/02/27 17:20:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/admin
+HTTP_REFERER=http://localhost:8090/index.php?r=user/index
+---
+2016/02/27 17:26:17 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/admin
+HTTP_REFERER=http://localhost:8090/index.php?r=user/index
+---
+2016/02/27 17:26:38 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/admin
+HTTP_REFERER=http://localhost:8090/index.php?r=user/index
+---
+2016/02/27 17:27:48 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/agnaldo/yii-demo/framework/web/CController.php:336
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('update')
+#9 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/update')
+#10 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=user/update
+---
+2016/02/27 17:27:54 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/admin
+HTTP_REFERER=http://localhost:8090/index.php?r=user/create
+---
+2016/02/27 17:30:01 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/admin
+HTTP_REFERER=http://localhost:8090/index.php?r=user/create
+---
+2016/02/27 17:30:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /home/agnaldo/yii-demo/framework/web/CController.php:483
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#3 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user/admin
+HTTP_REFERER=http://localhost:8090/index.php?r=user/create
+---
+2016/02/27 17:30:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/admin
+HTTP_REFERER=http://localhost:8090/index.php?r=user/create
+---
+2016/02/27 17:53:04 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/admin
+HTTP_REFERER=http://localhost:8090/index.php?r=user/create
+---
+2016/02/27 17:54:39 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/admin
+HTTP_REFERER=http://localhost:8090/index.php?r=site/login
+---
+2016/02/27 17:55:23 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/admin
+HTTP_REFERER=http://localhost:8090/index.php?r=user/index
+---
+2016/02/27 17:56:55 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/admin
+HTTP_REFERER=http://localhost:8090/index.php?r=user/view&id=8
+---
+2016/03/12 19:22:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "new".' in /home/agnaldo/yii-demo/framework/web/CController.php:483
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CController.php(270): CController->missingAction('new')
+#1 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('new')
+#2 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('site/new')
+#3 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/new
+---
+2016/03/12 19:23:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in /home/agnaldo/yii-demo/framework/web/CController.php:483
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CController.php(270): CController->missingAction('user')
+#1 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('user')
+#2 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('site/user')
+#3 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/user
+---
+2016/03/12 19:23:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Site".' in /home/agnaldo/yii-demo/framework/web/CController.php:483
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CController.php(270): CController->missingAction('Site')
+#1 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('Site')
+#2 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('site/Site')
+#3 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/Site
+---
+2016/03/12 19:23:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/agnaldo/yii-demo/framework/web/CController.php:483
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('site/site')
+#3 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/site
+---
+2016/03/12 19:25:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in /home/agnaldo/yii-demo/framework/web/CController.php:483
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CController.php(270): CController->missingAction('user')
+#1 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('user')
+#2 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('site/user')
+#3 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/user
+---
+2016/03/12 19:25:59 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/admin
+HTTP_REFERER=http://localhost:8080/index.php?r=site/login
+---
+2016/03/12 19:26:17 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/admin
+HTTP_REFERER=http://localhost:8080/index.php?r=user/view&id=1
+---
+2016/03/13 09:39:11 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/admin
+HTTP_REFERER=http://localhost:8080/index.php?r=user/view&id=1
+---
+2016/03/13 09:57:29 [error] [exception.CException] exception 'CException' with message 'Property "UserController.menul" is not defined.' in /home/agnaldo/yii-demo/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/agnaldo/yii-demo/demos/teste2/protected/views/layouts/column2.php(16): CComponent->__get('menul')
+#1 /home/agnaldo/yii-demo/framework/web/CBaseController.php(126): require('/home/agnaldo/y...')
+#2 /home/agnaldo/yii-demo/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/agnaldo/y...', Array, true)
+#3 /home/agnaldo/yii-demo/framework/web/CController.php(784): CBaseController->renderFile('/home/agnaldo/y...', Array, true)
+#4 /home/agnaldo/yii-demo/demos/teste2/protected/controllers/UserController.php(56): CController->render('view', Array)
+#5 [internal function]: UserController->actionView('1')
+#6 /home/agnaldo/yii-demo/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#7 /home/agnaldo/yii-demo/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#8 /home/agnaldo/yii-demo/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#15 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('view')
+#17 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#18 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/user/1
+---
+2016/03/13 10:13:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "view".' in /home/agnaldo/yii-demo/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('view')
+#1 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/view
+---
+2016/03/13 10:18:28 [error] [php] require(): Filename cannot be empty (/home/agnaldo/yii-demo/framework/web/CBaseController.php:130)
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/zii/widgets/CListView.php(291): SiteController->renderFile()
+#1 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#4 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(149): CListView->renderContent()
+#5 /home/agnaldo/yii-demo/framework/web/CBaseController.php(181): CListView->run()
+#6 /home/agnaldo/yii-demo/demos/teste2/protected/views/site/index.php(22): SiteController->widget()
+#7 /home/agnaldo/yii-demo/framework/web/CBaseController.php(126): require()
+#8 /home/agnaldo/yii-demo/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /home/agnaldo/yii-demo/framework/web/CController.php(869): SiteController->renderFile()
+#10 /home/agnaldo/yii-demo/framework/web/CController.php(782): SiteController->renderPartial()
+#11 /home/agnaldo/yii-demo/demos/teste2/protected/controllers/SiteController.php(33): SiteController->render()
+#12 /home/agnaldo/yii-demo/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#13 /home/agnaldo/yii-demo/framework/web/CController.php(308): CInlineAction->runWithParams()
+#14 /home/agnaldo/yii-demo/framework/web/CController.php(286): SiteController->runAction()
+#15 /home/agnaldo/yii-demo/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#16 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): SiteController->run()
+#17 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /home/agnaldo/yii-demo/demos/teste2/protected/views/site/index.php (22)
+in /home/agnaldo/yii-demo/demos/teste2/protected/controllers/SiteController.php (33)
+in /home/agnaldo/yii-demo/demos/teste2/index.php (13)
+2016/03/13 10:19:47 [error] [php] require(): Filename cannot be empty (/home/agnaldo/yii-demo/framework/web/CBaseController.php:130)
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/zii/widgets/CListView.php(291): SiteController->renderFile()
+#1 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#4 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(149): CListView->renderContent()
+#5 /home/agnaldo/yii-demo/framework/web/CBaseController.php(181): CListView->run()
+#6 /home/agnaldo/yii-demo/demos/teste2/protected/views/site/index.php(8): SiteController->widget()
+#7 /home/agnaldo/yii-demo/framework/web/CBaseController.php(126): require()
+#8 /home/agnaldo/yii-demo/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /home/agnaldo/yii-demo/framework/web/CController.php(869): SiteController->renderFile()
+#10 /home/agnaldo/yii-demo/framework/web/CController.php(782): SiteController->renderPartial()
+#11 /home/agnaldo/yii-demo/demos/teste2/protected/controllers/SiteController.php(33): SiteController->render()
+#12 /home/agnaldo/yii-demo/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#13 /home/agnaldo/yii-demo/framework/web/CController.php(308): CInlineAction->runWithParams()
+#14 /home/agnaldo/yii-demo/framework/web/CController.php(286): SiteController->runAction()
+#15 /home/agnaldo/yii-demo/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#16 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): SiteController->run()
+#17 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /home/agnaldo/yii-demo/demos/teste2/protected/views/site/index.php (8)
+in /home/agnaldo/yii-demo/demos/teste2/protected/controllers/SiteController.php (33)
+in /home/agnaldo/yii-demo/demos/teste2/index.php (13)
+2016/03/13 10:20:00 [error] [exception.CException] exception 'CException' with message 'The property "itemView" cannot be empty.' in /home/agnaldo/yii-demo/framework/zii/widgets/CListView.php:210
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CBaseController.php(147): CListView->init()
+#1 /home/agnaldo/yii-demo/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#2 /home/agnaldo/yii-demo/demos/teste2/protected/views/site/index.php(8): CBaseController->widget('zii.widgets.CLi...', Array)
+#3 /home/agnaldo/yii-demo/framework/web/CBaseController.php(126): require('/home/agnaldo/y...')
+#4 /home/agnaldo/yii-demo/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/agnaldo/y...', Array, true)
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(869): CBaseController->renderFile('/home/agnaldo/y...', Array, true)
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#7 /home/agnaldo/yii-demo/demos/teste2/protected/controllers/SiteController.php(33): CController->render('index', Array)
+#8 /home/agnaldo/yii-demo/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#9 /home/agnaldo/yii-demo/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/agnaldo/yii-demo/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('')
+#13 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/
+---
+2016/03/13 10:20:17 [error] [php] Undefined variable: dataProvider (/home/agnaldo/yii-demo/demos/teste2/protected/views/site/index.php:6)
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/zii/widgets/CListView.php(291): SiteController->renderFile()
+#1 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#4 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(149): CListView->renderContent()
+#5 /home/agnaldo/yii-demo/framework/web/CBaseController.php(181): CListView->run()
+#6 /home/agnaldo/yii-demo/demos/teste2/protected/views/site/index.php(8): SiteController->widget()
+#7 /home/agnaldo/yii-demo/framework/web/CBaseController.php(126): require()
+#8 /home/agnaldo/yii-demo/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /home/agnaldo/yii-demo/framework/web/CController.php(869): SiteController->renderFile()
+#10 /home/agnaldo/yii-demo/framework/web/CController.php(782): SiteController->renderPartial()
+#11 /home/agnaldo/yii-demo/demos/teste2/protected/controllers/SiteController.php(33): SiteController->render()
+#12 /home/agnaldo/yii-demo/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#13 /home/agnaldo/yii-demo/framework/web/CController.php(308): CInlineAction->runWithParams()
+#14 /home/agnaldo/yii-demo/framework/web/CController.php(286): SiteController->runAction()
+#15 /home/agnaldo/yii-demo/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#16 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): SiteController->run()
+#17 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /home/agnaldo/yii-demo/demos/teste2/protected/views/site/index.php (6)
+in /home/agnaldo/yii-demo/demos/teste2/protected/views/site/index.php (8)
+in /home/agnaldo/yii-demo/demos/teste2/protected/controllers/SiteController.php (33)
+2016/03/13 10:55:31 [error] [exception.CException] exception 'CException' with message 'Property "User.Delete" is not defined.' in /home/agnaldo/yii-demo/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/db/ar/CActiveRecord.php(145): CComponent->__get('Delete')
+#1 /home/agnaldo/yii-demo/demos/teste2/protected/views/site/_view.php(19): CActiveRecord->__get('Delete')
+#2 /home/agnaldo/yii-demo/framework/web/CBaseController.php(130): require('/home/agnaldo/y...')
+#3 /home/agnaldo/yii-demo/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/agnaldo/y...', Array, false)
+#4 /home/agnaldo/yii-demo/framework/zii/widgets/CListView.php(291): CBaseController->renderFile('/home/agnaldo/y...', Array)
+#5 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#9 /home/agnaldo/yii-demo/framework/web/CBaseController.php(181): CBaseListView->run()
+#10 /home/agnaldo/yii-demo/demos/teste2/protected/views/site/index.php(8): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 /home/agnaldo/yii-demo/framework/web/CBaseController.php(126): require('/home/agnaldo/y...')
+#12 /home/agnaldo/yii-demo/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/agnaldo/y...', Array, true)
+#13 /home/agnaldo/yii-demo/framework/web/CController.php(869): CBaseController->renderFile('/home/agnaldo/y...', Array, true)
+#14 /home/agnaldo/yii-demo/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#15 /home/agnaldo/yii-demo/demos/teste2/protected/controllers/SiteController.php(33): CController->render('index', Array)
+#16 /home/agnaldo/yii-demo/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#17 /home/agnaldo/yii-demo/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /home/agnaldo/yii-demo/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('')
+#21 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#22 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#23 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/
+---
+2016/03/13 10:55:46 [error] [exception.CException] exception 'CException' with message 'Property "User.Delete" is not defined.' in /home/agnaldo/yii-demo/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/db/ar/CActiveRecord.php(145): CComponent->__get('Delete')
+#1 /home/agnaldo/yii-demo/demos/teste2/protected/views/site/_view.php(19): CActiveRecord->__get('Delete')
+#2 /home/agnaldo/yii-demo/framework/web/CBaseController.php(130): require('/home/agnaldo/y...')
+#3 /home/agnaldo/yii-demo/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/agnaldo/y...', Array, false)
+#4 /home/agnaldo/yii-demo/framework/zii/widgets/CListView.php(291): CBaseController->renderFile('/home/agnaldo/y...', Array)
+#5 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#9 /home/agnaldo/yii-demo/framework/web/CBaseController.php(181): CBaseListView->run()
+#10 /home/agnaldo/yii-demo/demos/teste2/protected/views/site/index.php(8): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 /home/agnaldo/yii-demo/framework/web/CBaseController.php(126): require('/home/agnaldo/y...')
+#12 /home/agnaldo/yii-demo/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/agnaldo/y...', Array, true)
+#13 /home/agnaldo/yii-demo/framework/web/CController.php(869): CBaseController->renderFile('/home/agnaldo/y...', Array, true)
+#14 /home/agnaldo/yii-demo/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#15 /home/agnaldo/yii-demo/demos/teste2/protected/controllers/SiteController.php(33): CController->render('index', Array)
+#16 /home/agnaldo/yii-demo/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#17 /home/agnaldo/yii-demo/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /home/agnaldo/yii-demo/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('')
+#21 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#22 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#23 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/
+---
+2016/03/13 11:13:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "new".' in /home/agnaldo/yii-demo/framework/web/CController.php:483
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CController.php(270): CController->missingAction('new')
+#1 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('new')
+#2 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/new')
+#3 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/new
+HTTP_REFERER=http://localhost:8080/
+---
+2016/03/13 11:13:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "new".' in /home/agnaldo/yii-demo/framework/web/CController.php:483
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CController.php(270): CController->missingAction('new')
+#1 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('new')
+#2 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/new')
+#3 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/new
+HTTP_REFERER=http://localhost:8080/
+---
+2016/03/13 11:14:25 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('new')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/new')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/user/new
+HTTP_REFERER=http://localhost:8080/
+---
+2016/03/13 11:14:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('new')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/new')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/user/new
+HTTP_REFERER=http://localhost:8080/
+---
+2016/03/13 11:15:27 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('new')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/new')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/user/new
+HTTP_REFERER=http://localhost:8080/
+---
+2016/03/13 11:15:58 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('new')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/new')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/user/new
+HTTP_REFERER=http://localhost:8080/
+---
+2016/03/13 11:18:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in /home/agnaldo/yii-demo/framework/web/CController.php:483
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CController.php(270): CController->missingAction('create')
+#1 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('create')
+#2 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create')
+#3 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/create
+HTTP_REFERER=http://localhost:8080/
+---
+2016/03/13 11:18:42 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('new')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/new')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/user/new
+HTTP_REFERER=http://localhost:8080/
+---
+2016/03/13 11:23:31 [error] [php] Undefined variable: model (/home/agnaldo/yii-demo/demos/teste2/protected/views/user/new.php:2)
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CController.php(869): UserController->renderFile()
+#1 /home/agnaldo/yii-demo/framework/web/CController.php(782): UserController->renderPartial()
+#2 /home/agnaldo/yii-demo/demos/teste2/protected/controllers/UserController.php(52): UserController->render()
+#3 /home/agnaldo/yii-demo/framework/web/actions/CInlineAction.php(49): UserController->actionNew()
+#4 /home/agnaldo/yii-demo/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#6 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): UserController->filterAccessControl()
+#9 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/agnaldo/yii-demo/framework/web/CController.php(265): UserController->runActionWithFilters()
+#12 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): UserController->run()
+#13 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/user/new
+in /home/agnaldo/yii-demo/demos/teste2/protected/views/user/new.php (2)
+in /home/agnaldo/yii-demo/demos/teste2/protected/controllers/UserController.php (52)
+in /home/agnaldo/yii-demo/demos/teste2/index.php (13)
+2016/03/13 11:24:52 [error] [php] Undefined variable: model (/home/agnaldo/yii-demo/demos/teste2/protected/views/user/_form.php:20)
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CController.php(869): UserController->renderFile()
+#1 /home/agnaldo/yii-demo/demos/teste2/protected/views/user/new.php(2): UserController->renderPartial()
+#2 /home/agnaldo/yii-demo/framework/web/CBaseController.php(126): require()
+#3 /home/agnaldo/yii-demo/framework/web/CBaseController.php(95): UserController->renderInternal()
+#4 /home/agnaldo/yii-demo/framework/web/CController.php(869): UserController->renderFile()
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(782): UserController->renderPartial()
+#6 /home/agnaldo/yii-demo/demos/teste2/protected/controllers/UserController.php(52): UserController->render()
+#7 /home/agnaldo/yii-demo/framework/web/actions/CInlineAction.php(49): UserController->actionNew()
+#8 /home/agnaldo/yii-demo/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#10 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): UserController->filterAccessControl()
+#13 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#15 /home/agnaldo/yii-demo/framework/web/CController.php(265): UserController->runActionWithFilters()
+#16 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): UserController->run()
+#17 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/user/new
+in /home/agnaldo/yii-demo/demos/teste2/protected/views/user/_form.php (20)
+in /home/agnaldo/yii-demo/demos/teste2/protected/views/user/new.php (2)
+in /home/agnaldo/yii-demo/demos/teste2/protected/controllers/UserController.php (52)
+2016/03/13 11:26:29 [error] [exception.CException] exception 'CException' with message 'UserController cannot find the requested view "form".' in /home/agnaldo/yii-demo/framework/web/CController.php:878
+Stack trace:
+#0 /home/agnaldo/yii-demo/demos/teste2/protected/views/user/new.php(2): CController->renderPartial('form', Array)
+#1 /home/agnaldo/yii-demo/framework/web/CBaseController.php(126): require('/home/agnaldo/y...')
+#2 /home/agnaldo/yii-demo/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/agnaldo/y...', Array, true)
+#3 /home/agnaldo/yii-demo/framework/web/CController.php(869): CBaseController->renderFile('/home/agnaldo/y...', Array, true)
+#4 /home/agnaldo/yii-demo/framework/web/CController.php(782): CController->renderPartial('new', Array, true)
+#5 /home/agnaldo/yii-demo/demos/teste2/protected/controllers/UserController.php(56): CController->render('new', Array)
+#6 /home/agnaldo/yii-demo/framework/web/actions/CInlineAction.php(49): UserController->actionNew()
+#7 /home/agnaldo/yii-demo/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#14 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('new')
+#16 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/new')
+#17 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/index.php/user/new
+HTTP_REFERER=http://localhost:8080/
+---
+2016/03/13 11:42:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/agnaldo/yii-demo/framework/web/CController.php:483
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/site')
+#3 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/site
+HTTP_REFERER=http://localhost:8080/index.php/user/new
+---
+2016/03/13 11:42:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in /home/agnaldo/yii-demo/framework/web/CController.php:483
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CController.php(270): CController->missingAction('user')
+#1 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('user')
+#2 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/user')
+#3 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/user
+HTTP_REFERER=http://localhost:8080/index.php/user/new
+---
+2016/03/13 12:04:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in /home/agnaldo/yii-demo/framework/web/CController.php:483
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CController.php(270): CController->missingAction('user')
+#1 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('user')
+#2 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/user')
+#3 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/user
+HTTP_REFERER=http://localhost:8080/index.php/user/new
+---
+2016/03/13 12:04:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in /home/agnaldo/yii-demo/framework/web/CController.php:483
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CController.php(270): CController->missingAction('user')
+#1 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('user')
+#2 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/user')
+#3 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/user
+HTTP_REFERER=http://localhost:8080/index.php/user/new
+---
+2016/03/13 12:05:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in /home/agnaldo/yii-demo/framework/web/CController.php:483
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CController.php(270): CController->missingAction('user')
+#1 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('user')
+#2 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/user')
+#3 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/user/18
+HTTP_REFERER=http://localhost:8080/index.php/user/new
+---
+2016/03/13 12:43:47 [error] [php] Undefined variable: dataProvider (/home/agnaldo/yii-demo/demos/teste2/protected/views/site/_view.php:18)
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/zii/widgets/CListView.php(291): SiteController->renderFile()
+#1 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#4 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(149): CListView->renderContent()
+#5 /home/agnaldo/yii-demo/framework/web/CBaseController.php(181): CListView->run()
+#6 /home/agnaldo/yii-demo/demos/teste2/protected/views/site/index.php(14): SiteController->widget()
+#7 /home/agnaldo/yii-demo/framework/web/CBaseController.php(126): require()
+#8 /home/agnaldo/yii-demo/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /home/agnaldo/yii-demo/framework/web/CController.php(869): SiteController->renderFile()
+#10 /home/agnaldo/yii-demo/framework/web/CController.php(782): SiteController->renderPartial()
+#11 /home/agnaldo/yii-demo/demos/teste2/protected/controllers/SiteController.php(33): SiteController->render()
+#12 /home/agnaldo/yii-demo/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#13 /home/agnaldo/yii-demo/framework/web/CController.php(308): CInlineAction->runWithParams()
+#14 /home/agnaldo/yii-demo/framework/web/CController.php(286): SiteController->runAction()
+#15 /home/agnaldo/yii-demo/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#16 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): SiteController->run()
+#17 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /home/agnaldo/yii-demo/demos/teste2/protected/views/site/_view.php (18)
+in /home/agnaldo/yii-demo/demos/teste2/protected/views/site/index.php (14)
+in /home/agnaldo/yii-demo/demos/teste2/protected/controllers/SiteController.php (33)
+2016/03/13 12:48:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('delete')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/delete')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/user/delete
+HTTP_REFERER=http://localhost:8080/
+---
+2016/03/13 12:49:54 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('delete')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/delete')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/user/delete
+HTTP_REFERER=http://localhost:8080/
+---
+2016/03/13 12:50:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('delete')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/delete')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/user/delete
+HTTP_REFERER=http://localhost:8080/
+---
+2016/03/13 12:50:26 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('delete')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/delete')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/user/delete
+---
+2016/03/13 12:54:23 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/agnaldo/yii-demo/framework/web/CController.php:336
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('update')
+#9 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/update')
+#10 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/user/update
+HTTP_REFERER=http://localhost:8080/
+---
+2016/03/13 12:54:27 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('delete')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/delete')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/user/delete
+HTTP_REFERER=http://localhost:8080/
+---
+2016/03/13 12:54:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('delete')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/delete')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/user/delete
+HTTP_REFERER=http://localhost:8080/
+---
+2016/03/13 12:54:36 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/agnaldo/yii-demo/framework/web/CController.php:336
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('update')
+#9 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/update')
+#10 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/user/update
+HTTP_REFERER=http://localhost:8080/
+---
+2016/03/13 14:32:26 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('delete')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/delete')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/user/delete
+---
+2016/03/13 14:32:48 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('delete')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/delete')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/user/delete/25
+HTTP_REFERER=http://localhost:8080/index.php/user/25
+---
+2016/03/13 14:40:55 [error] [php] Undefined variable: model (/home/agnaldo/yii-demo/demos/teste2/protected/views/site/index.php:7)
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CController.php(869): SiteController->renderFile()
+#1 /home/agnaldo/yii-demo/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /home/agnaldo/yii-demo/demos/teste2/protected/controllers/SiteController.php(33): SiteController->render()
+#3 /home/agnaldo/yii-demo/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /home/agnaldo/yii-demo/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(286): SiteController->runAction()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php
+in /home/agnaldo/yii-demo/demos/teste2/protected/views/site/index.php (7)
+in /home/agnaldo/yii-demo/demos/teste2/protected/controllers/SiteController.php (33)
+in /home/agnaldo/yii-demo/demos/teste2/index.php (13)
+2016/03/13 14:41:11 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('delete')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/delete')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/user/delete
+HTTP_REFERER=http://localhost:8080/index.php
+---
+2016/03/13 14:51:18 [error] [php] include(Html.php): failed to open stream: No such file or directory (/home/agnaldo/yii-demo/framework/YiiBase.php:432)
+Stack trace:
+#0 /home/agnaldo/yii-demo/demos/teste2/protected/views/site/_view.php(17): spl_autoload_call()
+#1 /home/agnaldo/yii-demo/framework/web/CBaseController.php(130): require()
+#2 /home/agnaldo/yii-demo/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#3 /home/agnaldo/yii-demo/framework/zii/widgets/CListView.php(291): SiteController->renderFile()
+#4 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#5 unknown(0): CListView->renderSection()
+#6 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#7 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(149): CListView->renderContent()
+#8 /home/agnaldo/yii-demo/framework/web/CBaseController.php(181): CListView->run()
+#9 /home/agnaldo/yii-demo/demos/teste2/protected/views/site/index.php(14): SiteController->widget()
+#10 /home/agnaldo/yii-demo/framework/web/CBaseController.php(126): require()
+#11 /home/agnaldo/yii-demo/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#12 /home/agnaldo/yii-demo/framework/web/CController.php(869): SiteController->renderFile()
+#13 /home/agnaldo/yii-demo/framework/web/CController.php(782): SiteController->renderPartial()
+#14 /home/agnaldo/yii-demo/demos/teste2/protected/controllers/SiteController.php(33): SiteController->render()
+#15 /home/agnaldo/yii-demo/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#16 /home/agnaldo/yii-demo/framework/web/CController.php(308): CInlineAction->runWithParams()
+#17 /home/agnaldo/yii-demo/framework/web/CController.php(286): SiteController->runAction()
+#18 /home/agnaldo/yii-demo/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#19 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): SiteController->run()
+#20 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#22 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php
+in /home/agnaldo/yii-demo/demos/teste2/protected/views/site/_view.php (17)
+in /home/agnaldo/yii-demo/demos/teste2/protected/views/site/index.php (14)
+in /home/agnaldo/yii-demo/demos/teste2/protected/controllers/SiteController.php (33)
+2016/03/13 14:52:54 [error] [php] include(Html.php): failed to open stream: No such file or directory (/home/agnaldo/yii-demo/framework/YiiBase.php:432)
+Stack trace:
+#0 /home/agnaldo/yii-demo/demos/teste2/protected/views/site/_view.php(18): spl_autoload_call()
+#1 /home/agnaldo/yii-demo/framework/web/CBaseController.php(130): require()
+#2 /home/agnaldo/yii-demo/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#3 /home/agnaldo/yii-demo/framework/zii/widgets/CListView.php(291): SiteController->renderFile()
+#4 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#5 unknown(0): CListView->renderSection()
+#6 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#7 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(149): CListView->renderContent()
+#8 /home/agnaldo/yii-demo/framework/web/CBaseController.php(181): CListView->run()
+#9 /home/agnaldo/yii-demo/demos/teste2/protected/views/site/index.php(14): SiteController->widget()
+#10 /home/agnaldo/yii-demo/framework/web/CBaseController.php(126): require()
+#11 /home/agnaldo/yii-demo/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#12 /home/agnaldo/yii-demo/framework/web/CController.php(869): SiteController->renderFile()
+#13 /home/agnaldo/yii-demo/framework/web/CController.php(782): SiteController->renderPartial()
+#14 /home/agnaldo/yii-demo/demos/teste2/protected/controllers/SiteController.php(33): SiteController->render()
+#15 /home/agnaldo/yii-demo/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#16 /home/agnaldo/yii-demo/framework/web/CController.php(308): CInlineAction->runWithParams()
+#17 /home/agnaldo/yii-demo/framework/web/CController.php(286): SiteController->runAction()
+#18 /home/agnaldo/yii-demo/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#19 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): SiteController->run()
+#20 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#22 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php
+in /home/agnaldo/yii-demo/demos/teste2/protected/views/site/_view.php (18)
+in /home/agnaldo/yii-demo/demos/teste2/protected/views/site/index.php (14)
+in /home/agnaldo/yii-demo/demos/teste2/protected/controllers/SiteController.php (33)
+2016/03/13 14:56:42 [error] [php] include(Html.php): failed to open stream: No such file or directory (/home/agnaldo/yii-demo/framework/YiiBase.php:432)
+Stack trace:
+#0 /home/agnaldo/yii-demo/demos/teste2/protected/views/site/_view.php(18): spl_autoload_call()
+#1 /home/agnaldo/yii-demo/framework/web/CBaseController.php(130): require()
+#2 /home/agnaldo/yii-demo/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#3 /home/agnaldo/yii-demo/framework/zii/widgets/CListView.php(291): SiteController->renderFile()
+#4 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#5 unknown(0): CListView->renderSection()
+#6 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#7 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(149): CListView->renderContent()
+#8 /home/agnaldo/yii-demo/framework/web/CBaseController.php(181): CListView->run()
+#9 /home/agnaldo/yii-demo/demos/teste2/protected/views/site/index.php(14): SiteController->widget()
+#10 /home/agnaldo/yii-demo/framework/web/CBaseController.php(126): require()
+#11 /home/agnaldo/yii-demo/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#12 /home/agnaldo/yii-demo/framework/web/CController.php(869): SiteController->renderFile()
+#13 /home/agnaldo/yii-demo/framework/web/CController.php(782): SiteController->renderPartial()
+#14 /home/agnaldo/yii-demo/demos/teste2/protected/controllers/SiteController.php(33): SiteController->render()
+#15 /home/agnaldo/yii-demo/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#16 /home/agnaldo/yii-demo/framework/web/CController.php(308): CInlineAction->runWithParams()
+#17 /home/agnaldo/yii-demo/framework/web/CController.php(286): SiteController->runAction()
+#18 /home/agnaldo/yii-demo/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#19 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): SiteController->run()
+#20 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#22 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php
+in /home/agnaldo/yii-demo/demos/teste2/protected/views/site/_view.php (18)
+in /home/agnaldo/yii-demo/demos/teste2/protected/views/site/index.php (14)
+in /home/agnaldo/yii-demo/demos/teste2/protected/controllers/SiteController.php (33)
+2016/03/13 14:56:49 [error] [php] include(Html.php): failed to open stream: No such file or directory (/home/agnaldo/yii-demo/framework/YiiBase.php:432)
+Stack trace:
+#0 /home/agnaldo/yii-demo/demos/teste2/protected/views/site/_view.php(18): spl_autoload_call()
+#1 /home/agnaldo/yii-demo/framework/web/CBaseController.php(130): require()
+#2 /home/agnaldo/yii-demo/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#3 /home/agnaldo/yii-demo/framework/zii/widgets/CListView.php(291): SiteController->renderFile()
+#4 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#5 unknown(0): CListView->renderSection()
+#6 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#7 /home/agnaldo/yii-demo/framework/zii/widgets/CBaseListView.php(149): CListView->renderContent()
+#8 /home/agnaldo/yii-demo/framework/web/CBaseController.php(181): CListView->run()
+#9 /home/agnaldo/yii-demo/demos/teste2/protected/views/site/index.php(14): SiteController->widget()
+#10 /home/agnaldo/yii-demo/framework/web/CBaseController.php(126): require()
+#11 /home/agnaldo/yii-demo/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#12 /home/agnaldo/yii-demo/framework/web/CController.php(869): SiteController->renderFile()
+#13 /home/agnaldo/yii-demo/framework/web/CController.php(782): SiteController->renderPartial()
+#14 /home/agnaldo/yii-demo/demos/teste2/protected/controllers/SiteController.php(33): SiteController->render()
+#15 /home/agnaldo/yii-demo/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#16 /home/agnaldo/yii-demo/framework/web/CController.php(308): CInlineAction->runWithParams()
+#17 /home/agnaldo/yii-demo/framework/web/CController.php(286): SiteController->runAction()
+#18 /home/agnaldo/yii-demo/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#19 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): SiteController->run()
+#20 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#22 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php
+in /home/agnaldo/yii-demo/demos/teste2/protected/views/site/_view.php (18)
+in /home/agnaldo/yii-demo/demos/teste2/protected/views/site/index.php (14)
+in /home/agnaldo/yii-demo/demos/teste2/protected/controllers/SiteController.php (33)
+2016/03/13 14:59:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('delete')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/delete')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/user/delete/25
+HTTP_REFERER=http://localhost:8080/index.php
+---
+2016/03/13 15:00:08 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/agnaldo/yii-demo/framework/web/CController.php:1118
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/delete')
+#10 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/user/delete/25
+---
+2016/03/13 15:00:14 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/agnaldo/yii-demo/framework/web/CController.php:1118
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/delete')
+#10 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/user/delete/25
+HTTP_REFERER=http://localhost:8080/index.php
+---
+2016/03/13 15:02:00 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/agnaldo/yii-demo/framework/web/CController.php:1118
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/delete')
+#10 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/user/delete/25
+HTTP_REFERER=http://localhost:8080/index.php
+---
+2016/03/13 15:02:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/agnaldo/yii-demo/framework/web/CController.php:1118
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('Delete')
+#9 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/Delete')
+#10 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/user/Delete/25
+HTTP_REFERER=http://localhost:8080/index.php
+---
+2016/03/13 15:02:48 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/agnaldo/yii-demo/framework/web/CController.php:1118
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('Delete')
+#9 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/Delete')
+#10 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/user/Delete
+HTTP_REFERER=http://localhost:8080/index.php
+---
+2016/03/13 15:04:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/agnaldo/yii-demo/framework/web/CController.php:1118
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('Delete')
+#9 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/Delete')
+#10 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/user/Delete/25
+HTTP_REFERER=http://localhost:8080/
+---
+2016/03/13 15:05:23 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/agnaldo/yii-demo/framework/web/CController.php:1118
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('Delete')
+#9 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/Delete')
+#10 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/user/Delete/25
+HTTP_REFERER=http://localhost:8080/
+---
+2016/03/13 15:06:23 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/agnaldo/yii-demo/framework/web/CController.php:1118
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('Delete')
+#9 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/Delete')
+#10 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/user/Delete/25
+HTTP_REFERER=http://localhost:8080/
+---
+2016/03/13 15:06:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/agnaldo/yii-demo/framework/web/CController.php:1118
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('Delete')
+#9 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/Delete')
+#10 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/user/Delete/25
+HTTP_REFERER=http://localhost:8080/
+---
+2016/03/13 15:06:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Del".' in /home/agnaldo/yii-demo/framework/web/CController.php:483
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CController.php(270): CController->missingAction('Del')
+#1 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('Del')
+#2 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/Del')
+#3 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/Del/25
+HTTP_REFERER=http://localhost:8080/
+---
+2016/03/13 15:07:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/agnaldo/yii-demo/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/agnaldo/yii-demo/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/agnaldo/yii-demo/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/agnaldo/yii-demo/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/agnaldo/yii-demo/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/agnaldo/yii-demo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(282): CController->run('Del')
+#8 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('user/Del')
+#9 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/user/Del/25
+HTTP_REFERER=http://localhost:8080/
+---
+2016/04/14 19:53:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cliente".' in /home/agnaldo/yii-demo/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/agnaldo/yii-demo/framework/web/CWebApplication.php(141): CWebApplication->runController('cliente')
+#1 /home/agnaldo/yii-demo/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/agnaldo/yii-demo/demos/teste2/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cliente
+---
