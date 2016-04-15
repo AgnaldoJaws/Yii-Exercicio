@@ -10,7 +10,7 @@ $this->widget('zii.widgets.CMenu', array(
 
  $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
+	'itemView'=>'_view2',
 ));
 
 

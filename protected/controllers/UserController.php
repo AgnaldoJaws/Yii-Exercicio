@@ -118,14 +118,20 @@ class UserController extends Controller
 		{
 			$model->attributes=$_POST['User'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('index','id'=>$model->id));
 		}
 
 		$this->render('update',array(
 			'model'=>$model,
 		));
 	}
+	public function dropDownList(){
+		$models = Cliente::model()->findAll(
+			array('order' => 'nome'));
 
+		$list = CHtml::listData($models,
+			'id', 'nome');
+	}
 	/**
 	 * Deletes a particular model.
 	 * If deletion is successful, the browser will be redirected to the 'admin' page.
@@ -144,10 +150,7 @@ class UserController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('User');
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
-		));
+
 	}
 
 	/**

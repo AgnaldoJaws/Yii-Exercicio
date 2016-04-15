@@ -27,7 +27,7 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('User');
+		$dataProvider=new CActiveDataProvider('Cliente');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));

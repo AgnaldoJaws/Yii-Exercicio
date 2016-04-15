@@ -44,7 +44,7 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'vagina' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Enviar' : 'Save'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
